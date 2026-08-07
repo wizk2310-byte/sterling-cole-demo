@@ -8,10 +8,10 @@ export function Counter({
   duration = 1800,
 }: {
   to: number;
-  prefix?: string;
-  suffix?: string;
-  decimals?: number;
-  duration?: number;
+  prefix?: string | undefined;
+  suffix?: string | undefined;
+  decimals?: number | undefined;
+  duration?: number | undefined;
 }) {
   const ref = useRef<HTMLSpanElement | null>(null);
   const [value, setValue] = useState(0);
